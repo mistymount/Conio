@@ -13,3 +13,7 @@ Conio - A simple social network
     internal/
         service/ (Holds business logic to back the APIs)
         handler/ (HTTP transport layer (can be swapped for GRPC or graphql))
+
+## Database
+
+To start an insecure cockroach db - `cockroach start-single-node --insecure --host 127.0.0.1`
