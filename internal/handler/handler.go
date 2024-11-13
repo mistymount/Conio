@@ -13,11 +13,12 @@ type handler struct {
 
 // New creates an http handler with predefined routing
 func New(s *service.Service) http.Handler {
-	echo := echo.New()
+	h := &handler{s}
+	e := echo.New()
 
-	api := echo.Group("/api")
-	api.POST("/login", nil)
-	api.POST("/users", nil)
+	api := e.Group("/api")
+	api.POST("/login", h.login)
+	api.POST("/users", h.createUser)
 
-	return echo
+	return e
 }
