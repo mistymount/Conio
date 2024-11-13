@@ -8,6 +8,8 @@ Conio - A simple social network
 
 - Branca Token (alternative to JWT) - `go get -u github.com/hako/branca`
 
+- Routing `go get github.com/labstack/echo/v4`
+
 ### Directory Structure
 
     internal/
