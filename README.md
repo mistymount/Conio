@@ -17,3 +17,5 @@ Conio - A simple social network
 ## Database
 
 To start an insecure cockroach db - `cockroach start-single-node --insecure --host 127.0.0.1`
+
+To apply schema - `cat schema.sql | cockroach sql --insecure`
